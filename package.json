@@ -1,0 +1,12 @@
+{
+  "name": "free-fire-scraper",
+  "version": "1.0.0",
+  "description": "Scraping updates for Free Fire",
+  "main": "scraper.js",
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "scripts": {
+    "start": "node scraper.js"
+  }
+}
