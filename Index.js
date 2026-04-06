@@ -3,7 +3,7 @@ async function fetchLatestUpdates() {
     const tableBody = document.getElementById('table-body');
     
     // THE CONNECTION: Make sure this matches your Render link exactly
-    const RENDER_URL = 'https://free-fire-scraper-lordk.onrender.com/updates'; 
+    const RENDER_URL = 'https://free-fire-data-m3mk.onrender.com'; 
 
     try {
         console.log("System: Requesting data...");
@@ -21,7 +21,7 @@ async function fetchLatestUpdates() {
         // THE CORE FIX: 
         // If the server sends one update {}, this turns it into a list [{}]
         // This prevents the "forEach" error that was stopping your site.
-        const updates = Array.isArray(rawData) ? rawData : [rawData];
+        const updates = Array.isArray(rawdata) ? rawData : [rawData];
 
         // Clear the "Scanning" message
         tableBody.innerHTML = ''; 
@@ -61,3 +61,4 @@ async function fetchLatestUpdates() {
 
 // Start the process
 window.onload = fetchLatestUpdates;
+ 
