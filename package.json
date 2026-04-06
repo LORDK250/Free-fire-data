@@ -1,0 +1,16 @@
+{
+  "name": "my-web-project",
+  "version": "1.0.0",
+  "description": "Deployment project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm install"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
